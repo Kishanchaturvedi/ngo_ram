@@ -37,11 +37,16 @@
             </div>
             <div class="d-none d-lg-block">
                 <ul class="d-flex align-items-center gap-4 menu">
-                    <li><a href="index.html" class="menu-link nav-links p-2">ENGLISH</a></li>
                     <li><a href="#" class="menu-link active nav-links p-2">होम </a></li>
                     <li><a href="#about" class="menu-link nav-links p-2">हमारे बारे में</a></li>
                     <li><a href="#contact" class="menu-link nav-links p-2">संपर्क करें</a></li>
                     <li><a href="#blog" class="menu-link nav-links p-2">ब्लॉग</a></li>
+                    <div class="dropdown">
+                        <a href="index2.html" class="dropdown-btn nav-links p-2">HINDI</a>
+                        <ul class="dropdown-content">
+                            <a href="index2.html" class="translate nav-links p-2">ENGLISH</a>
+                        </ul>
+                    </div>
                     <button class="btn btn-orange-red text-white text-uppercase " id="rzp-button1"
                         onclick="razorpay()"><i class="bi bi-heart-fill me-2"></i> दान देना</button>
                 </ul>
@@ -61,11 +66,11 @@
                             class="bi bi-x-lg"></i></button>
                 </div>
                 <ul class="sidemenu-links-ul px-4">
-                    <li><a class="menu-link" href="index.html">English</a></li>
                     <li><a class="menu-link" href="#">होम</a></li>
                     <li><a class="menu-link" href="#about">हमारे बारे में</a></li>
                     <li><a class="menu-link" href="#blog">ब्लॉग </a></li>
                     <li><a class="menu-link" href="#contact">संपर्क करें</a></li>
+                    <li><a class="menu-link" href="index2.html">English</a></li>
                 </ul>
             </div>
             <div>
@@ -318,7 +323,8 @@
     <!-- gallary -->
     <div class="my-5 gallary">
         <h1 class="display-font text-center">हमारी गैलरी</h1>
-        <p class="text-xs col-md-3 text-center mt-1 mx-auto px-1">हमारे कुशीनगर जिले के कुछ स्वावलंबी गरीब व वंचित लोगों के
+        <p class="text-xs col-md-3 text-center mt-1 mx-auto px-1">हमारे कुशीनगर जिले के कुछ स्वावलंबी गरीब व वंचित लोगों
+            के
             फोटो दिखाए गए हैं।</p>
 
         <div class="swiper gallary-swiper-1 mt-5">
@@ -660,7 +666,7 @@
     <script src="./js/fslightbox.js"></script>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script src="./js/payment.js"></script>
-    
+
 </body>
 
 </html>

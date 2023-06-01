@@ -4,7 +4,49 @@
     box-sizing: border-box;
 }
 
+/* hover dropdown */
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background: transparent;
+    color: rgb(204, 204, 204);
+    padding: 0px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    font-size: 12px;
+    border-radius: 5px;
+    position: absolute;
+    background:  #F1592A;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(204, 204, 204);
+    padding: 0;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.translate:hover {
+    color: rgb(204, 204, 204);
+}
 
 .navbar {
     width: 100%;
@@ -95,13 +137,14 @@
 }
 
 .menu-link {
-    color: rgb(204, 204, 204);   
+    color: rgb(204, 204, 204);
     cursor: pointer;
 }
-.menu-link.active{
+
+.menu-link.active {
     background: #F1592A;
     font-weight: 800;
-    color:white !important;
+    color: white !important;
     border-radius: 5px;
     padding: 5px;
 }
@@ -109,25 +152,27 @@
 
 .menu-link,
 nav.fill ul li a {
-  position: relative;
+    position: relative;
 }
+
 .menu-link:after,
 .menu-link:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '';
-  color: transparent;
-  background: #aaa;
-  height: 4px;
-  transition: .4s;
-  background: #F1592A;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '';
+    color: transparent;
+    background: #aaa;
+    height: 4px;
+    transition: .4s;
+    background: #F1592A;
 }
+
 .menu-link:hover:after {
-  width: 100%;
+    width: 100%;
 }
 
 .hero {
@@ -149,7 +194,7 @@ nav.fill ul li a {
     z-index: 12 !important;
     
 } */
-.hero-bg{
+.hero-bg {
     z-index: -10 !important;
 }
 
@@ -189,6 +234,7 @@ nav.fill ul li a {
     height: 30rem;
     z-index: -1;
 }
+
 /* .wallpaper-btn{
     z-index: 50 !important;
     cursor: pointer ;
