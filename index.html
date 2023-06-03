@@ -508,23 +508,23 @@
                             <p class="fw-bold">संपर्क करें।</p>
                             <form class="">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control mt-3" placeholder="नाम">
+                                    <input type="text" class="form-control mt-3" placeholder="नाम" required>
                                     <label for="">नाम</label>
                                 </div>
                                 <div class="form-floating my-2">
-                                    <input type="email" class="form-control mt-3" placeholder="name@example.com">
+                                    <input type="email" class="form-control mt-3" placeholder="name@example.com" required>
                                     <label for="">मेल पता</label>
                                 </div>
                                 <div class="form-floating mb-2">
-                                    <input type="tel" class="form-control mt-3" placeholder="Mobile no.">
+                                    <input type="tel" class="form-control mt-3" placeholder="Mobile no." required>
                                     <label for="">मोबाइल नंबर</label>
                                 </div>
                                 <div class="form-floating">
-                                    <textarea class="form-control mt-3" placeholder="Leave a comment here"
+                                    <textarea class="form-control mt-3" placeholder="Leave a comment here"required
                                         style="height: 100px"></textarea>
                                     <label for="">टिप्पणियाँ</label>
                                 </div>
-                                <button class="btn w-100 input-btn fw-bold text-white mt-3">भेजना</button>
+                                <button type="submit" class="btn w-100 input-btn fw-bold text-white mt-3">भेजना</button>
                             </form>
                         </div>
                     </div>
@@ -609,6 +609,10 @@
                         <a href=""><i class="bi text-secondar icons fs-5 bi-youtube"></i></a>
 
                     </div>
+                    <div class="d-flex align-items-end mt-lg-5 pt-lg-5 mt-3">
+                        <a href="https://www.whizzact.com/#/" class="text-sm text-light "><span
+                                class="text-orange fw-medium">Powered by</span> : WhizzAct Pvt lmt</a>
+                    </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mt-4  ">
                     <h6 class="text-white btm-border">संपर्क</h6>
@@ -640,12 +644,12 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 mt-4  ">
                     <h5 class="text-white mb-4 btm-border">हमें एक संदेश छोड़ दो</h5>
                     <form>
-                        <input type="text" class="bg-transparent form-control text-light" placeholder="नाम">
-                        <input type="email" class="bg-transparent form-control text-light my-2" placeholder="ईमेल">
-                        <textarea class="form-control text-light bg-transparent" placeholder="संदेश"
+                        <input type="text" class="bg-transparent form-control text-light" placeholder="नाम" required>
+                        <input type="email" class="bg-transparent form-control text-light my-2" placeholder="ईमेल"
+                            required>
+                        <textarea class="form-control text-light bg-transparent" placeholder="संदेश" required
                             style="height: 100px"></textarea>
-
-                        <button class="btn w-50 float-end btn footer-btn fw-bold  mt-3">भेजना</button>
+                        <input type="submit" value="भेजना" class="btn w-50 float-end btn footer-btn fw-bold  mt-3" required>
                     </form>
                 </div>
             </div>
@@ -662,7 +666,7 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="/js/index.js"></script>
     <script src="./js/fslightbox.js"></script>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script src="./js/payment.js"></script>
